@@ -1,6 +1,6 @@
 
 module.exports = function ({ Users, Threads, Currencies }) {
-    const logger =require("../../catalogs/hamimc.js");
+    const logger =require("../../catalogs/alvic.js");
     return async function ({ event }) {
         const { allUserID, allCurrenciesID, allThreadID, userName, threadInfo } = global.data; 
         const { autoCreateDB } = global.ryuko;

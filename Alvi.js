@@ -1,5 +1,5 @@
  module.exports = async ({ api, event }) => {
-  const logger = require('./HAMIM/catalogs/hamimc.js')
+  const logger = require('./ALVI/catalogs/alvic.js')
   
   const configCustom = {
     autosetbio: {

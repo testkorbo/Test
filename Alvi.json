@@ -6,7 +6,7 @@
     "approval": false,
     "premium": true,
     "BOTNAME": "ALVI-BOT",
-    "PREFIX": ",",
+    "PREFIX": "!",
     "OPERATOR": [
         "61551846081032"
     ],

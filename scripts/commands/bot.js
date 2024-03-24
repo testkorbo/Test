@@ -1,13 +1,15 @@
+const fs = global.nodemodule["fs-extra"];
 module.exports.config = {
   name: "bot",
-  version: "0.0.2",
-  permission: 0,
-  prefix: false,
-  credits: "Nayan",
-  description: "talk with bot",
-  category: "user",
-  usages: "",
-    cooldowns: 5,
+  prefix: 'awto',
+  premium: false,
+  version: "1.0.1",
+  permssion: 0,
+  credits: "ALVI",
+  description: "Bot",
+  category: "Noprefix",
+  usages: "noprefix",
+  cooldowns: 5,
 };
 
 

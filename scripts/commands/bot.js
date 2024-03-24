@@ -5,7 +5,7 @@ module.exports.config = {
   premium: false,
   version: "1.0.1",
   permssion: 0,
-  credits: "ALVI",
+  credits: "Nayan",
   description: "Bot",
   category: "Noprefix",
   usages: "noprefix",

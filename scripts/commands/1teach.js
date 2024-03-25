@@ -2,7 +2,7 @@ module.exports.config = {
     name: "teach",
     version: "1",
     permission: 0,
-    credits: "Hamim",
+    credits: "ALVI",
     prefix: false,
     premium: false,
     description: "Teach X2 Simsimi",

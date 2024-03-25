@@ -4,7 +4,7 @@ module.exports.config = {
   permssion: 0,
   premium: false,
   prefix: true,
-  credits: "Hamim",
+  credits: "ALVI",
   description: "Pairing",
   category: "Love", 
   usages: "pair", 

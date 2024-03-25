@@ -4,7 +4,7 @@ module.exports.config = {
   permssion: 0,
   premium: false,
   prefix: true,
-  credits: "Hamim",
+  credits: "ALVI",
   description: "redroom vids",
   category: "Not For Kids",
   usages: "",
@@ -22,7 +22,7 @@ module.exports.run = async function({ api, event }) {
   let count = res.data.count;
   let callback = function () {
           api.sendMessage({
-            body: `--『 𝐇𝟒𝐌𝟏𝐌  🄱🄾🅃 』--`,
+            body: `♻️--『 🅰🅻🆅🅸 🅱🅾🆃 』--♻️`,
             attachment: fs.createReadStream(__dirname + `/data/kanna.${ext}`)
           }, event.threadID, () => fs.unlinkSync(__dirname + `/data/kanna.${ext}`), event.messageID);
         };

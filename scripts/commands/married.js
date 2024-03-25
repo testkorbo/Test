@@ -4,7 +4,7 @@ module.exports.config = {
   permssion: 0,
   premium: false,
   prefix: true,
-  credits: "Hamim",
+  credits: "ALVI",
   description: "married",
   category: "img",
   usages: "[@mention]",
@@ -71,6 +71,6 @@ module.exports.run = async function ({ event, api, args }) {
   if (!mention[0]) return api.sendMessage("Please mention 1 person.", threadID, messageID);
   else {
       const one = senderID, two = mention[0];
-      return makeImage({ one, two }).then(path => api.sendMessage({ body: "", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
+      return makeImage({ one, two }).then(path => api.sendMessage({ body: "•⎯͢⎯⃝🩵🪽.আমার শূন্য আঁধারে পূর্ন তুমি🖤\n\n__তোমার মায়া'তে মুগ্ধ আমি🩷😌💔", attachment: fs.createReadStream(path) }, threadID, () => fs.unlinkSync(path), messageID));
   }
     }

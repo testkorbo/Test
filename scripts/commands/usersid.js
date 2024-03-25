@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "uid",
 	version: "1.0.0",
 	permission: 0,
-	credits: "Hamim",
+	credits: "ALVI",
   premium: false,
 	prefix: false,
 	description: "get user id.",

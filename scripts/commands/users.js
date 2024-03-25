@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "user",
 	version: "1.0.5",
 	permission: 2,
-	credits: "Hamim",
+	credits: "ALVI",
 	prefix: true,
   premium: false,
 	description: "ban or unblock users",

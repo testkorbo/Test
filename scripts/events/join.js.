@@ -1,9 +1,14 @@
  module.exports.config = {
-  name: "join",
-  eventType: ['log:subscribe'],
-  version: "1.0.0",
-  credits: "Mirai-Team", // FIXED BY YAN Nayan
-  description: "GROUP UPDATE NOTIFICATION"
+  name: "joinNoti",
+  eventType: ["log:subscribe"],
+  version: "1.0.1",
+  credits: "CatalizCS", //fixing ken gusler
+  description: "Notify bot or group member with random gif/photo/video",
+  dependencies: {
+    "fs-extra": "",
+    "path": "",
+    "pidusage": ""
+  }
 };
 
 module.exports.onLoad = function () {

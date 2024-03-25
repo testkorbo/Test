@@ -2,7 +2,7 @@ module.exports.config = {
   name: "trans",
   version: "1.0.1",
   permission: 0,
-  credits: "Hamim",
+  credits: "ALVI",
   premium: false,
   description: "text translation",
   prefix: false,

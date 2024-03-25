@@ -2,9 +2,9 @@ module.exports.config = {
 	name: "work",
 	version: "1.0.1",
 	permission: 0,
-	credits: "Hamim",
+	credits: "ryuko",
 	prefix: true,
-  premium: false,
+        premium: false,
 	description: "earning money",
 	category: "with prefix",
   cooldowns: 5,
@@ -93,4 +93,4 @@ module.exports.run = async ({ event, api, Currencies, getText }) => {
             return;
         }, messageID);
     }     
-}
+				      }

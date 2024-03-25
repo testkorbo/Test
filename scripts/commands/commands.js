@@ -2,7 +2,7 @@ module.exports.config = {
     name: "command",
     version: "1.0.0",
     permission: 2,
-    credits: "Hamim",
+    credits: "ALVI",
     description: "manage/control all bot modules",
     prefix: true,
     premium: false,
@@ -23,7 +23,7 @@ const loadCommand = function ({ moduleList, threadID, messageID, getText }) {
     const { writeFileSync, unlinkSync, readFileSync } = global.nodemodule['fs-extra'];
     const { join } = global.nodemodule['path'];
     const { configPath, mainPath, api } = global.client;
-    const logger = require(mainPath + '/hamimc.js');
+    const logger = require(mainPath + '/alvic.js');
 
     var errorList = [];
     delete require['resolve'][require['resolve'](configPath)];
@@ -117,7 +117,7 @@ const loadCommand = function ({ moduleList, threadID, messageID, getText }) {
 const unloadModule = function ({ moduleList, threadID, messageID }) {
     const { writeFileSync, unlinkSync } = global.nodemodule["fs-extra"];
     const { configPath, mainPath, api } = global.client;
-    const logger = require(mainPath + "/hamimc.js").loader;
+    const logger = require(mainPath + "/alvic.js").loader;
 
     delete require.cache[require.resolve(configPath)];
     var configValue = require(configPath);

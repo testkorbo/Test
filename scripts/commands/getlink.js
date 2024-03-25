@@ -4,7 +4,7 @@ module.exports.config = {
   permssion: 0,
   premium: false,
   prefix: true,
-  credits: "Hamim",
+  credits: "ALVI",
   description: "Get the URL Download from Video, Audio is sent from the group",
   category: "Tool",
   usages: "getLink",

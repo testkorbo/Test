@@ -1,33 +1,47 @@
-module.exports.config = {
-    name: "teach",
-    version: "1",
-    permission: 0,
-    credits: "ALVI",
-    prefix: false,
-    premium: false,
-    description: "Teach X2 Simsimi",
-    usages: "Teach",
-    category: "...",
-    cooldowns: 0
+const axios = require('axios');
+const jimp = require("jimp");
+const fs = require("fs");
+
+module.exports.config = { 
+  name: "teach",
+  version: "0.0.2",
+  permission: 0,
+  prefix: 'awto',
+  premium: false,
+  credits: "ALVI",
+  description: "Teach sim",
+  category: "admin",
+  usages: "hi = hello",
+    cooldowns: 5,
 };
 
-const axios = require("axios");
+  module.exports.run = async function({ api, event, args, Users, Threads, Currencies}) {
+    const uid = event.senderID;
+    const info = args.join(" ");
+    const apis = await axios.get('https://raw.githubusercontent.com/MR-NAYAN-404/NAYAN-BOT/main/api.json')
+  const teach = apis.data.sim
+    var id = Object.keys(event.mentions)[0] || event.senderID;
+  var nam = await Users.getNameUser(id);
+  var ThreadInfo = await api.getThreadInfo(event.threadID);
+    if (!info) {
+      return api.sendMessage(`Please enter in the format:\n${global.config.PREFIX}teach hi = hello`, event.threadID);
+    } else {
+      const msg = info.split("=");
+      const ask = msg[0].trim();
+      const ans = msg[1].trim();
 
-module.exports.run = async ({ api, event, args }) => {
-    try {
 
-        const text = args.join(" ");
-        const text1 = text.substr(0, text.indexOf(" => "));
-        const text2 = text.split(" => ").pop();
+      const img = `${teach}/sim?type=teach&ask=${ask}&ans=${ans}`
+      try {
+        const response = await axios.get(img);
 
-        if (!text1 || !text2) {
-            return api.sendMessage(`Usage: ${global.config.PREFIX}teach who is x2? => x2 is hamim`, event.threadID, event.messageID);
-        }
 
-        const response = await axios.get(`https://052ffdc5-d547-47f5-b9d3-a96a656bbaa1-00-3s1trre0zg6jq.sisko.replit.dev//sim?type=teach&ask=${encodeURIComponent(text1)}&ans=${encodeURIComponent(text2)}`);
-        api.sendMessage(`Thank you for teaching..your text added to X2 server.`, event.threadID, event.messageID);
-    } catch (error) {
-        console.error("An error occurred:", error);
-        api.sendMessage("Oops! Something went wrong in x2 server.", event.threadID, event.messageID);
-    }
-};
+                api.sendMessage({ 
+          body: `📝Your Data Added To Database Successfully\n1️⃣ASK: ${ask}\n2️⃣ANS: ${ans}`
+                        }, event.threadID);
+                      } catch (error) {
+                        console.error(error);
+                        api.sendMessage("An error occurred while  teach.", event.threadID);
+                      }
+                    }
+                  };

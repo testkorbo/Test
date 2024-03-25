@@ -31,7 +31,7 @@ module.exports.run = async function({ api, event, args }) {
 const request = require("request");
 const axios = require("axios");
 const fs = require("fs");
-let path = __dirname + `/cache/info.png`;
+let path = __dirname + `/cache/hon.png`;
 let token = "EAAz77vHNq3YBO92uBzrKPZBBJxXPZApswO30M2xbZCWiAS11ZCDbpfksOERf6zqrvZA4wgoxZC47vNp9LZBGArAfBAP5T9c5StV8ZAxrbFeJmXpUKwXAhSpTcpwVXn2rOeDrDMXZC16tj9IJOFYNklECZAafWy4qE8q0KJqkxAVG9hxKEtFyhL66Qvc83yoFS7ofmJBNbPpRW6STzEiZArsGAZDZD"; /*get your EAAD6V7  contact meta developer🔥
 (note: the account you use must be a bot account to make sure that the account is not easily locked.)*/
   if (args.join().indexOf('@') !== -1){ var id = Object.keys(event.mentions) }

@@ -4,7 +4,7 @@ module.exports.config = {
 	permission: 2,
   prefix: false,
   premium: false,
-	credits: "Hamim",
+	credits: "ALVI",
 	description: "sendmsg",
 	category: "admin",
 	usages: "sendmsg [user]/[thread] id msg",

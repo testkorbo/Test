@@ -48,13 +48,35 @@ module.exports.run = async function({ api, event, Users }) {
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
     //api.changeNickname(`𝗕𝗢𝗧 ${(!global.config.BOTNAME) ? "Buddy" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
 
-    let gifUrl = 'https://i.postimg.cc/W39vdtG7/20230727-235934.jpg';
+    let gifUrl = 'https://i.postimg.cc/fTV8nkJh/20230726-020132.jpg';
 let gifPath = __dirname + '/Alvi/join/join.jpg';
 
 axios.get(gifUrl, { responseType: 'arraybuffer' })
 .then(response => {
     fs.writeFileSync(gifPath, response.data);
-    return api.sendMessage("চলে এসেছি আমি আলভী বট তোমাদের মাঝে🤭!", event.threadID, () => api.sendMessage({ body: `╭──────•◈•───────╮\n |        🄰🄻🅅🄸🄱🄾🅃       \n |ᴀꜱꜱᴀʟᴀᴍᴜᴀʟᴀɪᴋᴜᴍ\n |ᴀʟᴠɪ ʙᴏᴛ\n |ɪꜱ ᴄᴏɴɴᴇᴄᴛᴇᴅ...\n |ᴛʜᴀɴᴋ ʏᴏᴜ\n |ꜰᴏʀ ᴀᴅᴅɪɴɢ ᴍᴇ\n |ɴᴀᴍᴇ :${global.config.BOTNAME}\n |ᴘʀᴇꜰɪx :『  ${global.config.PREFIX} 』\n |ᴏᴡɴᴇʀ : \n |   ᴍʀ. ᴀʟᴠɪ-ᴄʜᴏᴡᴅʜᴜʀʏ\n╰──────•◈•───────╯`, attachment: fs.createReadStream(gifPath)}, threadID));
+    return api.sendMessage("╭──────•◈•───────╮\n |        🄰🄻🅅🄸🄱🄾🅃       \n চলে এসেছি আমি আলভী বট তোমাদের মাঝে_🤭 \n╰──────•◈•───────╯", event.threadID, () => api.sendMessage({ body: `${global.config.BOTNAME} CONNECTED«\n\n↤
+🌱আ্ঁ'স্ঁ'সা্ঁ'লা্ঁ'মু্ঁ ও্ঁ'য়া্ঁ'লা্ঁ'ই্ঁ'কু্ঁ'ম্ঁ🥀🌼
+<------------------------------>  
+BOT CONNECTED SUCCESFUL !!! 
+
+APPROVAL ALLOW IN THIS GROUP!!!
+<------------------------------>\n\nTO VIEW ANY COMMAND Use👉${global.config.PREFIX}help\nSee command👉 ${global.config.PREFIX}command
+\n\EXAMPLE:👇\n${global.config.PREFIX}admin (information)\n${global.config.PREFIX}islam (video)\n${global.config.PREFIX}tik (link)\n${global.config.PREFIX}fbvideo (link)
+<------------------------------>
+AND FOR ANY COMPLAINTS OR CONTACT BOT OPERATOR 
+
+DEVELOPER :MR. ALVI CHOWDHURY 
+
+🟣Facebook Account Link: 
+
+https://www.facebook.com/PINIK.MR.ALVI.CHOWDHURY.YOUR.NEXT.VATAR.XAN
+
+🔴Instagram Account Link:
+ https://www.instagram.com/alvixhowdhury420
+
+🔵WHATSAPP NUMBER: wa.me/+60135647836
+
+🟢SUPPORT EMAIL: ALVIXHOWDHURY420@GMAIL.COM`, attachment: fs.createReadStream(gifPath)}, threadID));
 })
 .catch(error => {
     console.error(error);
@@ -81,8 +103,8 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
       // console.log(event.logMessageData.addedParticipants)
       var id = [];
       for (let o = 0; o < event.logMessageData.addedParticipants.length; o++) {
-        let pathImg = __dirname + `/Alvi/join/${o}.jpg`;
-        let pathAva = __dirname + `/Alvi/join/alvi.jpg`;
+        let pathImg = __dirname + `/Alvi/join/${o}.png`;
+        let pathAva = __dirname + `/Alvi/join/avt.png`;
         let avtAnime = (await axios.get(encodeURI(
           `https://graph.facebook.com/${event.logMessageData.addedParticipants[o].userFbId}/picture?height=720&width=720&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662`), { responseType: "arraybuffer" })).data;
         var ok = [
@@ -143,7 +165,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
         abx.push(fs.createReadStream(__dirname + `/Alvi/join/${o}.png`))
       }
       memLength.sort((a, b) => a - b);
-      (typeof threadData.customJoin == "undefined") ? msg = `╭──────•◈•───────╮\n |        🄰🄻🅅🄸🄱🄾🅃        \n |ᴀꜱꜱᴀʟᴀᴍᴜᴀʟᴀɪᴋᴜᴍ\n |Dᴇᴀʀ, {name}\n |ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ\n |ᴏᴜʀ ꜰᴀᴍɪʟʏ 🌸\n |ɢᴄ : {threadName}\n |ᴍᴇᴍʙᴇʀ ɴᴏ : [ {soThanhVien} ]\n |ᴊᴏɪɴ ᴛɪᴍᴇ: [ {time} - {thu} ]\n |ʙᴏᴛ ᴏᴡɴᴇʀ: \n |   ᴍʀ. ᴀʟᴠɪ-ᴄʜᴏᴡᴅʜᴜʀʏ\n╰──────•◈•───────╯` : msg = threadData.customJoin;
+      (typeof threadData.customJoin == "undefined") ? msg = `╔════•|      ✿      |•════╗\n 💐আ্ঁস্ঁসা্ঁলা্ঁমু্ঁ💚আ্ঁলা্ঁই্ঁকু্ঁম্ঁ💐\n╚════•|      ✿      |•════╝\n\n    ✨🆆🅴🅻🅻 🅲🅾🅼🅴✨\n\n                 ❥𝐍𝐄𝐖~\n\n        ~🇲‌🇪‌🇲‌🇧‌🇪‌🇷‌~\n\n             [   {name} ]\n\n༄✺আ্ঁপ্ঁনা্ঁকে্ঁ আ্ঁমা্ঁদে্ঁর্ঁ✺࿐\n\n{threadName}\n\n 🥰🖤🌸—এ্ঁর্ঁ প্ঁক্ষ্ঁ🍀থে্ঁকে্ঁ🍀—🌸🥀\n\n         🥀_ভা্ঁলো্ঁবা্ঁসা্ঁ_অ্ঁভি্ঁরা্ঁম্ঁ_🥀\n\n༄✺আঁপঁনিঁ এঁইঁ গ্রুঁপেঁর {soThanhVien} নঁং মে্ঁম্বা্ঁরঁ ࿐\n\n    ╔╦══•    •✠•❀•✠ •   •══╦╗\n        ♥  𝐁𝐎𝐓'𝐬 𝐎𝐖𝐍𝐄𝐑♥\n\n                           ☟                     \n\n♥𝗠𝗥.𝗔𝗟𝗩𝗜 𝗖𝗛𝗢𝗪𝗗𝗛𝗨𝗥𝗬♥\n    ╚╩══•    •✠•❀•✠ •    •══╩╝\n─────────────────\n[ {time} - {thu} ]` : msg = threadData.customJoin;
       var nameAuthor = await Users.getNameUser(event.author)
       msg = msg
         .replace(/\{iduser}/g, iduser.join(', '))
@@ -160,7 +182,7 @@ axios.get(gifUrl, { responseType: 'arraybuffer' })
       var formPush = { body: msg, attachment: abx, mentions }
       api.sendMessage(formPush, threadID);
       for (let ii = 0; ii < parseInt(id.length); ii++) {
-        fs.unlinkSync(__dirname + `/Nayan/join/${ii}.png`)
+        fs.unlinkSync(__dirname + `/Alvi/join/${ii}.png`)
       }
     } catch (e) { return console.log(e) };
   }

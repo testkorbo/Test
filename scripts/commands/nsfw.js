@@ -1,10 +1,10 @@
 module.exports.config = {
-  name: "ALVI",
+  name: "nsfw",
   version: "1.0.0",
   permssion: 2,
   premium: false,
   prefix: true,
-  credits: "Hamim",
+  credits: "ALVI",
   description: "restriction",
   category: "system",
   cooldowns: 5,

@@ -50,7 +50,10 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
         if (fs.statSync(path).size > 26214400) return api.sendMessage('» যেই গানটা শুনতে চাও এক লাইন লিখে দাও ,', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
-            body: `[💝]══𝐀𝐋𝐕𝐈 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘══[💝]\n[🎀]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[🌸]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()-data.timestart)/1000)}\n[🎀]═════🄼🅄🅂🄸🄲══════[🎀]`,
+            body: `[💝]══🄰🄻🅅🄸🄱🄾🅃══[💝]\n[🎀]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[🌸]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()-data.timestart)/1000)}\n[🎀]═════🄼🅄🅂🄸🄲══════[🎀]
+
+~ᴛʜɪs ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ ʙʏ ᴍʀ. ᴀʟᴠɪ ᴄʜᴏᴡᴅʜᴜʀʏ
+  ___________________________`,
             attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
          event.messageID)
 
@@ -68,7 +71,7 @@ module.exports.convertHMS = function(value) {
     return (hours != '00' ? hours +':': '') + minutes+':'+seconds;
 }
 module.exports.run = async function ({ api, event, args }) {
-    if (args.length == 0 || !args) return api.sendMessage('» The search field cannot be empty!', event.threadID, event.messageID);
+    if (args.length == 0 || !args) return api.sendMessage('» কিরে ভাই গান শুনবি ভলো কথা গানের নাম লেখতে কি কষ্ট হয়😡 এই বার empty!😤\nদিলাম লাগলে আবার কমান্ড কর', event.threadID, event.messageID);
     const keywordSearch = args.join(" ");
     var path = `${__dirname}/cache/sing-${event.senderID}.mp3`
     if (fs.existsSync(path)) { 
@@ -79,7 +82,10 @@ module.exports.run = async function ({ api, event, args }) {
             var data = await downloadMusicFromYoutube(args.join(" "), path);
             if (fs.statSync(path).size > 26214400) return api.sendMessage('» যেই গানটা শুনতে চাও এক লাইন লিখে দাও ,', event.threadID, () => fs.unlinkSync(path), event.messageID);
             return api.sendMessage({ 
-                body: `[💝]══𝐀𝐋𝐕𝐈 𝐂𝐇𝐎𝐖𝐃𝐇𝐔𝐑𝐘══[💝]\n[🎀]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[🌸]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()- data.timestart)/1000)}\n[🎀]═════🄼🅄🅂🄸🄲══════[🎀]`,
+                body: `[💝]══🄰🄻🅅🄸🄱🄾🅃══[💝]\n[🎀]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[🌸]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()- data.timestart)/1000)}\n[🎀]═════🄼🅄🅂🄸🄲══════[🎀]
+
+~ᴛʜɪs ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ ʙʏ ᴍʀ. ᴀʟᴠɪ ᴄʜᴏᴡᴅʜᴜʀʏ
+  ___________________________`,
                 attachment: fs.createReadStream(path)}, event.threadID, ()=> fs.unlinkSync(path), 
             event.messageID)
 

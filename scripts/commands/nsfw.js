@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "nsfw",
+  name: "ALVI",
   version: "1.0.0",
   permssion: 2,
   premium: false,

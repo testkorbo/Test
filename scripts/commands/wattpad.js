@@ -6,7 +6,7 @@ module.exports.config = {
   prefix: false,
   premium: false,
   permission: 0,
-  credits: 'hamim',
+  credits: 'ALVI',
   description: '',
   category: 'without prefix',
   cooldowns: 5,

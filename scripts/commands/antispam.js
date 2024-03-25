@@ -4,7 +4,7 @@
     name: "antispam",
     version: "1.0.0",
     permission: 0,
-    credits: "Hamim",
+    credits: "ALVI",
     description: "automatically ban spammer",
     prefix: true,
     premium: false,

@@ -2,7 +2,7 @@ module.exports.config = {
   name: "grammar",
   version: "2.0.0",
   permission: 0,
-  credits: "Hamim",
+  credits: "ALVI",
   description: "grammar is a command that helps improve grammar by suggesting corrections and providing recommendations.",
   prefix: false,
   premium: false,

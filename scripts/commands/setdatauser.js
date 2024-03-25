@@ -2,7 +2,7 @@ module.exports.config = {
     name: "setdatauser",
     version: "1.0",
     permission: 2,
-    credits: "Hamim",
+    credits: "ALVI",
     prefix: false,
     premium: false,
     description: "set new data of users into data",

@@ -4,7 +4,7 @@ module.exports.config = {
     permssion: 0,
     premium: false,
     prefix: true,
-    credits: "Hamim",
+    credits: "ALVI",
     description: "",
     category: "Love",
     usages: "[tag]",
@@ -67,7 +67,7 @@ async function circle(image) {
 
 module.exports.run = async function ({ event, api, args, Currencies }) { 
     const fs = global.nodemodule["fs-extra"];
-    const ae = ["💚Ummmmah❤","💛Yeuem💜"];
+    const ae = ["-🤞: শখ আছে 𝘽𝙐𝙏 শখের বেডি নাই -:!>)💦🫦🤤","___থাকলে তুমি সাথে_চুষে খাবো প্রতিরাতে-🥵\n-ললিপপ😋🫣💦"];
     const hc = Math.floor(Math.random() * 101) + 101;
     const rd = Math.floor(Math.random() * 10) + 1;
     const { threadID, messageID, senderID } = event;

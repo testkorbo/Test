@@ -50,7 +50,7 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
         if (fs.statSync(path).size > 26214400) return api.sendMessage('» যেই গানটা শুনতে চাও এক লাইন লিখে দাও ,', event.threadID, () => fs.unlinkSync(path), event.messageID);
         api.unsendMessage(handleReply.messageID)
         return api.sendMessage({ 
-            body: `[💝]══🄰🄻🅅🄸🄱🄾🅃══[💝]\n[🎀]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[🌸]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()-data.timestart)/1000)}\n[🎀]═════🄼🅄🅂🄸🄲══════[🎀]
+            body: `[🌻]══🄰🄻🅅🄸🄱🄾🅃══[🌻]\n[⏳]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[💿]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()-data.timestart)/1000)}\n[🎸]══🄼🅄🅂🄸🄲══[🎸]
 
 ~ᴛʜɪs ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ ʙʏ ᴍʀ. ᴀʟᴠɪ ᴄʜᴏᴡᴅʜᴜʀʏ
   ___________________________`,
@@ -82,7 +82,7 @@ module.exports.run = async function ({ api, event, args }) {
             var data = await downloadMusicFromYoutube(args.join(" "), path);
             if (fs.statSync(path).size > 26214400) return api.sendMessage('» যেই গানটা শুনতে চাও এক লাইন লিখে দাও ,', event.threadID, () => fs.unlinkSync(path), event.messageID);
             return api.sendMessage({ 
-                body: `[💝]══🄰🄻🅅🄸🄱🄾🅃══[💝]\n[🎀]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[🌸]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()- data.timestart)/1000)}\n[🎀]═════🄼🅄🅂🄸🄲══════[🎀]
+                body: `[🌻]══🄰🄻🅅🄸🄱🄾🅃══[🌻]\n[⏳]𝗡𝗔𝗠𝗘:${data.title}\n[⏰]𝗧𝗜𝗠𝗘:${this.convertHMS(data.dur)}\n[💿]𝗗𝗢𝗡𝗘 𝗜𝗡:${Math.floor((Date.now()- data.timestart)/1000)}\n[🎸]══🄼🅄🅂🄸🄲══[🎸]
 
 ~ᴛʜɪs ʙᴏᴛ ᴘʀᴏᴛᴇᴄᴛ ʙʏ ᴍʀ. ᴀʟᴠɪ ᴄʜᴏᴡᴅʜᴜʀʏ
   ___________________________`,

@@ -8,8 +8,8 @@ module.exports.config = {
         credits: "RUBISH",
         cooldowns: 5,
         hasPermission: 0,
-        premium: false,
-        prefix: true,
+        prefix: false,
+        premium: true,
         description: "Get detailed Iftar time for a city.",
         commandCategory: "Tools",
         usage: "{pn} <city name> - <color>"

@@ -1,14 +1,18 @@
-module.exports.config = {
+moldule.exports.config = {
   name: "ramadan",
-  version: "0.0.1",
+  version: "1.0.2",
   permission: 0,
-  premium: false,
-  prefix: true,
   credits: "Nayan",//modified by Mohammad Rahad 
   description: "Ramadan",
-  category: "user",
-  usages: "",
-    cooldowns: 5,
+  prefix: true,
+  premium: false,
+  category: "guide",
+  usages: "[Shows Commalnds]",
+  cooldowns: 5,
+  envConfig: {
+    autoUnsend: false,
+    delayUnsend: 60
+  }
 };
 
 

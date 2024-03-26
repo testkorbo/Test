@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "MAHI",
   description: "Displays album options for selection.",
   premium: false,
-  prefix: true,
+  prefix: false,
   category: "Media",
   usages: "Only or add [cartoon/photo/lofi/sad/islamic/funny/horny/anime/aesthetic/cat/lyrics/love/sigma]",
   cooldowns: 5,

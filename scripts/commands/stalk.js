@@ -2,16 +2,17 @@ const axios = require('axios');
 const { unlinkSync, writeFileSync, createReadStream } = require('fs-extra');
 
 module.exports.config = {
-   name: "stalk",
-   version: "1.0", 
-   author: "RUBISH",
-   hasPermission: 1,
-   premium: false,
-   prefix: true,
-   description: "Retrieve information about a user on Facebook.",
-   commandCategory: "Info",
-   usage: "/stalk <@mention or reply to a message of the user>",
-   cooldowns: 1,
+    name: "pp",
+    version: "0.0.6",
+    permsion: 0,
+    prefix: true,
+    premium: false,
+    credits: "ALVI",
+    description: "Retrieve information about a user on Facebook",
+    usages: "[reply/uid/@mention]",
+    category: "info",
+    usePrefix: false,
+    cooldowns: 0
 };
 
   module.exports.run = async function ({ api, args, event }) {

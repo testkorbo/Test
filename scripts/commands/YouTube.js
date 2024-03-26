@@ -54,7 +54,8 @@ module.exports.handleReply = async function ({
             responseType: "arraybuffer"
         })).data;
         return s.writeFileSync(path1, Buffer.from(i, "utf-8")), e.unsendMessage(t.messageID), s.statSync(__dirname + "/cache/1.mp4").size > 26e6 ? e.sendMessage("The file could not be sent because it is larger than 25MB..", a.threadID, (() => l(__dirname + "/cache/1.mp4")), a.messageID) : e.sendMessage({
-            body: `» ${y}`,
+            body: `╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n __𝗗𝗼𝗻𝘁 𝗖𝗵𝗮𝗻𝗴𝗲 𝘆𝗼𝘂𝗿𝘀𝗲𝗹𝗳__
+•যে পছন্দ করবে সে 𝙰𝚍𝚓𝚞𝚜𝚝 ও করে নিবে__🖤😌\n╰──────•◈•───────╯ ${y}`,
             attachment: s.createReadStream(__dirname + "/cache/1.mp4")
         }, a.threadID, (() => s.unlinkSync(__dirname + "/cache/1.mp4")), a.messageID)
     } catch {

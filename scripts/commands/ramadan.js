@@ -3,16 +3,16 @@ const moment = require('moment-timezone');
 const { writeFileSync, unlinkSync, createReadStream } = require('fs-extra');
 
 module.exports.config = {
-        name: "ramadan",
-        version: "2.0", 
-        credits: "RUBISH",
-        cooldowns: 5,
-        hasPermission: 0,
-        prefix: false,
-        premium: true,
-        description: "Get detailed Iftar time for a city.",
-        commandCategory: "Tools",
-        usage: "{pn} <city name> - <color>"
+  name: "ramadan",
+  version: "0.0.1",
+  permission: 0,
+  prefix: false,
+  prefix: true,
+  credits: "Nayan",
+  description: "Get detailed Iftar time for a city",
+  category: "Tools",
+  usages: "{pn} <city name> - <color>",
+    cooldowns: 5,
 };
 
           module.exports.run = async function ({ api, args, event }) {

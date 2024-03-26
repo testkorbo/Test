@@ -6,7 +6,7 @@ module.exports.config = {
   name: "ramadan",
   version: "0.0.1",
   permission: 0,
-  prefix: false,
+  premium: false,
   prefix: true,
   credits: "Nayan",
   description: "Get detailed Iftar time for a city",

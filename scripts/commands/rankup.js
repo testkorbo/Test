@@ -2,11 +2,11 @@ const path = require('path');
 const fs = require('fs');
 const cacheDir = path.join(__dirname, 'cache');
 if (fs.existsSync(__dirname + '/scripts/commands/cache/rankup/rankup.gif')) {
-  //fs.unlinkSync('/home/runner/BotPack/scripts/commands/cache/rankup/rankup.png');
+  //fs.unlinkSync('/scripts/commands/cache/rankup/rankup.png');
 }
 
 if (fs.existsSync(__dirname + '/scripts/commands/cache/Avtmot.png')) {
-  //fs.unlinkSync(__dirname + '/home/runner/BotPack/scripts/commands/cache/Avtmot.png');
+  //fs.unlinkSync(__dirname + '/scripts/commands/cache/Avtmot.png');
 }
 
 if (!fs.existsSync(cacheDir)) {
@@ -17,10 +17,10 @@ module.exports.config = {
   name: "rankup",
   version: "7.3.1",
   hasPermssion: 1,
+  premium: false,
+  prefix: true,
   credits: "John Lester",
   description: "Announce rankup for each group, user",
-  Prefix: true,
-  premium: false,
   commandCategory: "Edit-IMG",
   dependencies: {
     "fs-extra": ""

@@ -6,7 +6,7 @@ module.exports.config = {
   prefix: true,
   credits: "ALVI",
   description: "fingering your vagina",
-  category: "nsfw",
+  category: "img",
   usages: "[@mention]",
   cooldowns: 5,
   dependencies: {

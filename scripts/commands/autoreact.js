@@ -5,6 +5,7 @@ module.exports.config = {
   credits: "Nayan",
   description: "..",
   prefix: false,
+  premium: false,
   category: "...",
   usages: "",
   cooldowns: 5,

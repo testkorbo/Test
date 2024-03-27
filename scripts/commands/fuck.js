@@ -6,7 +6,7 @@ module.exports.config = {
   premium: false,
   credits: "ALVI",
   description: "Get fuck",
-  category: "nsfw",
+  category: "img",
   usages: "[@mention]",
   cooldowns: 5,
   dependencies: {

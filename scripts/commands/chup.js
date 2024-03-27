@@ -20,7 +20,7 @@ event.body.indexOf("CHUP")==0 ||
 event.body.indexOf("চুপ")==0 || event.body.indexOf("chup")==0 || event.body.indexOf("Chup")==0) {
 		var msg = {
 				body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n-ওই চুপ বেশি বুঝো 🫵তুমি-🤫😒\n╰──────•◈•───────╯",
-				attachment: fs.createReadStream(__dirname + `/noprefix/chup.mp4`)
+				attachment: fs.createReadStream(__dirname + `/nofrefix/chup.mp4`)
 			}
 			api.sendMessage( msg, threadID, messageID);
     api.setMessageReaction("🤫", event.messageID, (err) => {}, true)

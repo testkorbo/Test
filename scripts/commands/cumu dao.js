@@ -20,7 +20,7 @@ event.body.indexOf("Kiss")==0 ||
 event.body.indexOf("cumu")==0 ||
 event.body.indexOf("Cumu")==0 ||
 event.body.indexOf("কিস")==0 ||
-event.body.indexOf("ummmmmah")==0 || event.body.indexOf("ummmmmmmmmmmmah")==0 || event.body.indexOf("চুমু")==0) {
+event.body.indexOf("💋")==0 || event.body.indexOf("ummmmmmmmmmmmah")==0 || event.body.indexOf("চুমু")==0) {
 		var msg = {
 				body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n__ওই সুনো না-🙁\n-একটা উম্মম্মাহ দিবা-🙈🤭💋\n╰──────•◈•───────╯",
 				attachment: fs.createReadStream(__dirname + `/nofrefix/kiss.mp4`)

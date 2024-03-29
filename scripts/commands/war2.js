@@ -1,7 +1,7 @@
 module.exports.config = {
   name: "war2",
   version: "1.0.0",
-  permission: 1,
+  permission: 2,
   premium: false,
   prefix: true,
   credits: "ALVI",
@@ -49,4 +49,4 @@ setTimeout(() => {a({body: "মুরগি আব্বু ডাক ওকে 
 
 
   
-}
+  }

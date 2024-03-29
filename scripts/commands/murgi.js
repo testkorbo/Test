@@ -1,12 +1,12 @@
 module.exports.config = {
   name: "murgi",
   version: "1.0.0",
-  permission: 1,
+  permission: 2,
+  premium: false,
+  prefix: true,
   credits: "ALVI",
   description: "5 বারের জন্য ক্রমাগত বন্ধুর ট্যাগ ট্যাগ করুন\nসেই ব্যক্তিকে আত্মা কলিং বলা যেতে পারে",
-  prefix: true,
   category: "auto",
- premium: false,
   usages: "please @mention",
   cooldowns: 10,
 };
@@ -93,4 +93,4 @@ setTimeout(() => {a("~ আমার পুত। জা ভাগ🤖")} , 39000
 
 
   
-                     }
+}

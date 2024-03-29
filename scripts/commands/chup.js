@@ -16,7 +16,7 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("cup")==0 || event.body.indexOf("Cup")==0 ||
-event.body.indexOf("CHUP")==0 ||
+event.body.indexOf("🤫")==0 ||
 event.body.indexOf("চুপ")==0 || event.body.indexOf("chup")==0 || event.body.indexOf("Chup")==0) {
 		var msg = {
 				body: "╭──────•◈•───────╮\n         🄰🄻🅅🄸🄱🄾🅃       \n-ওই চুপ বেশি বুঝো 🫵তুমি-🤫😒\n╰──────•◈•───────╯",

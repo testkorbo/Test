@@ -18,7 +18,7 @@ module.exports.handleEvent = async function ({ api, event }) {
     if (!event.body || !(event.body.indexOf("jan") === 0 ||
 event.body.indexOf("জান") === 0 ||
 event.body.indexOf("JAN") === 0 || 
-event.body.indexOf("Jan") === 0 ||event.body.indexOf("Xan") === 0)) return;
+event.body.indexOf("Jan") === 0 ||event.body.indexOf("Alo") === 0)) return;
     const args = event.body.split(/\s+/);
     args.shift();
 

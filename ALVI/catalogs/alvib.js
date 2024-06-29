@@ -235,9 +235,9 @@ try {
 try {
   var appStateFile = resolve(join(global.client.mainPath, "../../Alvistate.json"));
   var appState = ((process.env.REPL_OWNER || process.env.PROCESSOR_IDENTIFIER) && (fs.readFileSync(appStateFile, 'utf8'))[0] != "[" && ryuko.encryptSt) ? JSON.parse(global.utils.decryptState(fs.readFileSync(appStateFile, 'utf8'), (process.env.REPL_OWNER || process.env.PROCESSOR_IDENTIFIER))) : require(appStateFile);
-  logger.loader(`deployed ${chalk.blueBright('x2state')} file`)
+  logger.loader(`deployed ${chalk.blueBright('alvistate')} file`)
 } catch (e) {
-  return logger.error(`can't read ${chalk.blueBright('x2state')} file`)
+  return logger.error(`can't read ${chalk.blueBright('alvistate')} file`)
 }
 
 function onBot({ models: botModel }) {

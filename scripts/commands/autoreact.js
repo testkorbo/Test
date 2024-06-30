@@ -2,7 +2,7 @@ module.exports.config = {
   name: "aotoreact",
   version: "2.0.0",
   permission: 0,
-  credits: "Nayan",
+  credits: "Alvi",
   description: "..",
   prefix: false,
   premium: false,

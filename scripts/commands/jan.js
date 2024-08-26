@@ -4,7 +4,7 @@ const axios = require('axios');
 
 module.exports = {
   config: {
-    name: "mim",
+    name: "jan",
     premium: false,
     version: "1.0.0",
     permission: 0,

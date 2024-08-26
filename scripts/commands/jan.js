@@ -2,19 +2,18 @@
 
 const axios = require('axios');
 
-module.exports = {
-  config: {
-    name: "jan",
-    premium: false,
+module.exports.config = {
+    name: "Jan",
     version: "1.0.0",
     permission: 0,
-    credits: "nayan",
-    description: "...",
-    prefix: 'awto',
-    category: "talk",
+    premium: false,
+    prefix:'awto',
+    credits: "ALVI",
+    description: "Simsimi",
     usages: "hi",
-    cooldowns: 5,
-  },
+    category: "talk",
+    cooldowns: 5
+};
 
   handleReply: async function ({ api, event, handleReply }) {
     try {

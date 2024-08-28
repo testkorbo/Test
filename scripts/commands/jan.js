@@ -6,7 +6,7 @@ module.exports.config = {
   premium: false,
   version: "1.0.0",
   permssion: 0,
-  credits: "ALVI",
+  credits: "nayan",
   description: "...",
   category: "talk",
   usages: "hi",

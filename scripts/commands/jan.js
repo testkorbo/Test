@@ -1,17 +1,15 @@
-//File created by Mohammad Nayan and fully coded by Nayan
-
 const axios = require('axios');
 
 module.exports.config = {
   name: "jan",
   prefix: 'awto',
   premium: false,
-  version: "1.0.1",
+  version: "1.0.0",
   permssion: 0,
   credits: "ALVI",
-  description: "simsim",
-  category: "Noprefix",
-  usages: "noprefix",
+  description: "...",
+  category: "talk",
+  usages: "hi",
   cooldowns: 5,
 };
   handleReply: async function ({ api, event, handleReply }) {

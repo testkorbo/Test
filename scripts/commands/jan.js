@@ -3,18 +3,17 @@
 const axios = require('axios');
 
 module.exports.config = {
-    name: "Jan",
-    version: "1.0.0",
-    permission: 0,
-    premium: false,
-    prefix:'awto',
-    credits: "ALVI",
-    description: "Simsimi",
-    usages: "hi",
-    category: "talk",
-    cooldowns: 5
+  name: "jan",
+  prefix: 'awto',
+  premium: false,
+  version: "1.0.1",
+  permssion: 0,
+  credits: "ALVI",
+  description: "simsim",
+  category: "Noprefix",
+  usages: "noprefix",
+  cooldowns: 5,
 };
-
   handleReply: async function ({ api, event, handleReply }) {
     try {
       const response = await axios.get(`http://37.27.114.136:25472/sim?type=ask&ask=${encodeURIComponent(event.body)}`);
